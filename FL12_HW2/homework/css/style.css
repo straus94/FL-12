@@ -1,5 +1,128 @@
-/*
+.tm-nav-item:hover {
+    background-color: lightskyblue;
+}
 
-write your code here
+.tm-nav-item:hover .tm-nav-item-link {
+    color: #fff;
+}
 
-*/
+.tm-content-header {
+    background: linear-gradient(90deg, lightskyblue, burlywood);
+}
+
+.tm-banner-inner {
+    background-color: #fff;
+}
+
+.tm-banner-text {
+    text-shadow: 5px 5px 3px #333;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes move {
+    0% { margin-left: 200px;}
+    100% {margin-right: 0;}
+} 
+
+.flex-2-col {
+    display: flex;
+    align-items: center;
+}
+
+.tm-section-title {
+    text-align: center;
+}
+
+.tm-section-description {
+    line-height: 30px;
+    text-indent: 25px;
+}
+
+.box-bg:hover {
+    color: lightskyblue;
+    background-color: lightgray;
+}
+
+.padding-medium h2 {
+    text-align: center;
+    color: lightskyblue;
+}
+
+.padding-medium ol {
+    list-style-type: lower-alpha;
+}
+
+.padding-medium ol li:hover:before {
+    content: ">";
+}
+
+.padding-medium ol li:nth-child(1):after,
+.padding-medium ol li:nth-child(3):after {
+    content: 'New';
+    margin-left: 3px;
+    color: red;
+    font-weight: bold;
+    vertical-align: super;
+    font-size: small;
+}
+
+.blocks .tm-team-description-container p:last-child {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-style: italic;
+}
+
+.blocks .tm-team-description-container h2 {
+    text-align: left;
+}
+
+.box-work {
+    padding: 5px;
+}
+
+.box-work:nth-child(2n - 1) {
+    background-color: lightskyblue;
+    color: #fff; 
+}
+
+.box-work p {
+    font-style: italic;
+}
+
+.box-work p::first-letter {
+    font-weight: bold;
+}
+
+#contact h2 {
+    text-align: left;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 1px solid lightskyblue;
+    border-top: transparent;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-top: 1px solid lightskyblue;
+    background-color: lightskyblue;
+}
+
+
+
+.form-group textarea {
+    border: 1px solid lightskyblue;
+    background: url('../img/email-icon.png');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 99% 95%;
+}
+
+.submit-btn {
+    float: right;
+    background-color: #fff;
+    color: lightskyblue;
+    border: 1px solid lightskyblue;
+}
