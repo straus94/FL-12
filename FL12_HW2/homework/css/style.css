@@ -1,67 +1,72 @@
 @media print {
 
-    /* .container {
+    body,
+    .tm-main-content,
+    .heading ol,
+    #ideas .carousel {
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-    } */
-
-    .tm-main-content {
-        /* padding: 0; */
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start; */
     }
 
-    .tm-sidebar {
+    .tm-sidebar,
+    section::before,
+    .flex-item img,
+    #about,
+    .heading li::after,
+    .blocks .tm-content-box,
+    #ideas ol,
+    #contact,
+    .img-contact-us,
+    section:last-child {
         display: none;
     }
 
-    .flex-2-col {
-        flex-direction: column;
-        justify-content: flex-start;
+    #home,
+    .heading,
+    #ideas .carousel {
+        margin: 0;
     }
 
-    .flex-2-col .flex-item:last-child {
-        display: none;
+    .tm-team-description-container {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
     }
 
     .tm-section-description {
         text-indent: -25px;
     }
 
-    .tm-section-description,
-    .tm-section-title {
+    .flex-2-col {
         text-align: center;
+        margin: 0;
     }
 
-    #about {
-        display: none;
+    .heading div {
+        padding: 0 60px;
+        max-width: 100%;
     }
-
-    .padding-medium ol {
-        /* margin: 0 auto; */
+    .heading ol {
         display: flex;
         flex-direction: column;
-        justify-content: baseline;
     }
-
-    .padding-medium ol li {
-        /* width: 100%; */
-        /* align-self: center; */
-    } 
-
-    .padding-medium ol li:nth-child(1):after,
-    .padding-medium ol li:nth-child(3):after {
-        display: none;
-    }
-    .heading .padding-medium ol li:nth-child(2n - 1) {
+    .heading li:nth-child(2n - 1) {
         align-self: flex-end;
+        margin-right: 120px;
     }
 
+    .heading li:nth-child(2n) {
+        margin-left: 120px;
+    }
+
+   .blocks .tm-team-description-container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .blocks .tm-team-description-container p {
+       text-align: center;
+   }
 }
 
 .tm-nav-item:hover {
