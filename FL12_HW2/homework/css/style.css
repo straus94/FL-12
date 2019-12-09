@@ -94,7 +94,6 @@ section::before {
 .tm-banner-text {
     text-shadow: 5px 5px 3px #333;
     animation-name: move;
-    animation-iteration-count: infinite;
     animation-duration: 2s;
 }
 @keyframes move {
