@@ -69,6 +69,12 @@
    }
 }
 
+section::before {
+    content: '';
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid lightskyblue;
+}
+
 .tm-nav-item:hover {
     background-color: lightskyblue;
 }
