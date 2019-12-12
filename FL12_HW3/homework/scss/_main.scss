@@ -1,0 +1,190 @@
+// Write your styles here
+@mixin btns($bg, $color, $radius: 2px) {
+    color: $color;
+    background-color: $bg;
+    border-radius: $radius;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    padding: 12px 28px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($bg, 10%)
+    }
+}
+
+@mixin urls($color) {
+    color: $color;
+
+    &:hover {
+        color: darken($color, 20%)
+    }
+}
+
+body, p, div, button, main {
+    font-family: $fontBase;
+}
+
+.header {
+    // margin: 0 auto;
+    // width: 100%;
+    background-image: $headerBg;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 50px 100px 100px;
+    border-bottom-right-radius: 50% 25%;
+
+    .header-wrap {
+        
+        .landing-logo {
+            display: flex;
+            align-items: center;
+            img {
+                // display: inline-block;
+                height: 90%;
+            }
+            
+            p {
+                margin: 0 0 0 10px;
+                display: flex;
+                // text-align: center;
+                flex-direction: column;
+                font-weight: 600;
+                color: $fontColorBase;
+                font-size: $fontSizeBase + 10;
+                // justify-content: flex-end;
+                span {
+                    // display: block;
+                    font-family: $fontLogo;
+                    font-size: $fontSizeBase - 4;
+                    text-align: center;
+                }
+            }
+        }
+
+        .header_heading {
+            max-width: 500px;
+            // font-size: 60px;
+            font-size: $fontSizeBase + 46;
+            font-weight: bold;
+            color: $fontColorBase;
+            font-family: $fontBase;
+        }
+    
+        .header_text {
+            font-size: $fontSizeBase;
+            color: $fontColorBase;
+            line-height: 25px;
+            max-width: 450px;
+            margin: 0 0 80px 0;
+        }
+    
+        div:last-child {
+            max-width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header_button {
+                @include btns ($bg: $btnBackgroundColor, $color: $btnTextColor);
+            }
+            a {
+                @include urls ($color: $colorLink);
+            }
+        }
+    }
+}
+
+.section {
+    .section_text {
+        text-align: center;
+        font-size: $fontSizeBase + 24;
+        font-weight: 600;
+        color: $fontColorBase;
+    }
+
+    .section_card_wrap {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        .section_card {
+            align-self: center;
+            background-color: $bgCardColor;
+            display: flex;
+            border-radius: $baseRadius;
+            padding: 10px;
+            margin: 10px 0;
+            width: 65%;
+    
+            .section_card_img {
+                border-radius: $baseRadius;
+            }
+    
+            .section_card_right_container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 50px;
+                line-height: 25px;
+        
+                .section_card_heading {
+                    font-size: $fontSizeBase + 8;
+                    font-weight: 600;
+                    color: #ffffff;
+                }
+        
+                .section_card_text {
+                    color: $colorNews;
+                }
+        
+                a {
+                    // margin: 0 auto;
+                    // align-self: center;
+                    @include urls ($color: $colorNews);
+                }
+            }
+        }
+    }
+
+    .section_banner {
+        margin: 0 auto;
+        width: 70%;
+        border-radius: $baseRadius;
+        // display: inline-block;
+        // justify-content: space-around;
+        background: linear-gradient(90deg, rgba(100,148,19,1) 0%, rgba(47,93,209,1) 100%);
+        // position: relative;
+        box-sizing: border-box;
+        padding: 0 150px;
+        
+        .section_banner_text_wrap {
+            // align-items: center;
+            // display: flex;
+            display: inline-block;
+            // flex-direction: column;
+            // justify-content: space-around;
+            padding: 20px 0;
+            // width: 50%;
+            // position: relative;
+
+            .section_banner_heading {
+                // padding: 20px 0;
+                margin: 0;
+                color: $fontColorBase;
+                font-size: $fontSizeBase + 8;
+                font-weight: 700;
+            }
+
+            .section_banner_text {
+                font-size: $fontSizeBase - 2;
+                color: $colorLink;
+            }
+        }
+
+        .section_banner_button {
+            margin: 30px 0 0 0;
+            float: right;
+            @include btns($bg: $btnBackgroundColor, $color: $btnTextColor, $radius: 2px);
+        }
+    }
+}
