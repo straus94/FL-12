@@ -108,7 +108,7 @@ body, p, div, button, main {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px 50px;
+      padding: 20px 100px;
       line-height: 25px; }
       .section .section_card_wrap .section_card .section_card_right_container .section_card_heading {
         font-size: 22px;
