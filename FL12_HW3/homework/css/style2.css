@@ -9,9 +9,10 @@
     flex-direction: column;
     font-weight: 600;
     color: #ffffff;
-    font-size: 24px; }
+    font-size: 24px;
+    font-family: "Fresca", sans-serif; }
     .landing-logo p span, .header .header-wrap .landing-logo p span, .footer .footer-wrap .footer_logo p span {
-      font-family: "Hind", sans-serif;
+      font-family: "Fresca", sans-serif;
       font-size: 10px;
       text-align: center; }
 
@@ -183,6 +184,7 @@ body, p, div, button, main {
       width: 350px;
       color: #C0C3CE; }
     .footer .footer-wrap .footer-cr {
-      color: #C0C3CE; }
+      color: #C0C3CE;
+      font-family: "Fresca", sans-serif; }
 
 /*# sourceMappingURL=style2.css.map */

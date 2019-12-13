@@ -38,6 +38,7 @@
         font-weight: 600;
         color: $fontColorBase;
         font-size: $fontSizeBase + 10;
+        font-family: $fontLogo;
         // justify-content: flex-end;
         span {
             font-family: $fontLogo;
@@ -251,6 +252,7 @@ body, p, div, button, main {
 
         .footer-cr {
             color: $colorNews;
+            font-family: $fontLogo;
         }
     }
 }

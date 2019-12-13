@@ -9,7 +9,8 @@
     flex-direction: column;
     font-weight: 600;
     color: #2C2F3C;
-    font-size: 24px; }
+    font-size: 24px;
+    font-family: "Hind", sans-serif; }
     .landing-logo p span, .header .header-wrap .landing-logo p span, .footer .footer-wrap .footer_logo p span {
       font-family: "Hind", sans-serif;
       font-size: 10px;
@@ -183,6 +184,7 @@ body, p, div, button, main {
       width: 350px;
       color: #C0C3CE; }
     .footer .footer-wrap .footer-cr {
-      color: #C0C3CE; }
+      color: #C0C3CE;
+      font-family: "Hind", sans-serif; }
 
 /*# sourceMappingURL=style1.css.map */
