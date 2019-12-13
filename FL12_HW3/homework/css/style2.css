@@ -1,10 +1,10 @@
 /*
 Error: Undefined variable: "$fontColorBase".
-        on line 42 of D:/epam/FL12_HW3/homework/scss/_main.scss
+        on line 39 of D:/epam/FL12_HW3/homework/scss/_main.scss
         from line 3 of D:\epam\FL12_HW3\homework\scss\style2.scss
 
 Backtrace:
-D:/epam/FL12_HW3/homework/scss/_main.scss:42
+D:/epam/FL12_HW3/homework/scss/_main.scss:39
 D:\epam\FL12_HW3\homework\scss\style2.scss:3
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
@@ -76,4 +76,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fontColorBase\".\A         on line 42 of D:/epam/FL12_HW3/homework/scss/_main.scss\A         from line 3 of D:\epam\FL12_HW3\homework\scss\style2.scss"; }
+  content: "Error: Undefined variable: \"$fontColorBase\".\A         on line 39 of D:/epam/FL12_HW3/homework/scss/_main.scss\A         from line 3 of D:\epam\FL12_HW3\homework\scss\style2.scss"; }

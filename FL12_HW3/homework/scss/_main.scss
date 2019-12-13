@@ -6,7 +6,6 @@
     outline: none;
     box-sizing: border-box;
     border: none;
-    // padding: 12px 28px;
     width: 100px;
     height: 40px;
     cursor: pointer;
@@ -29,21 +28,18 @@
     align-items: center;
 
     img {
-        // display: inline-block;
         height: 90%;
     }
     
     p {
         margin: 0 0 0 10px;
         display: flex;
-        // text-align: center;
         flex-direction: column;
         font-weight: 600;
         color: $fontColorBase;
         font-size: $fontSizeBase + 10;
         // justify-content: flex-end;
         span {
-            // display: block;
             font-family: $fontLogo;
             font-size: $fontSizeBase - 4;
             text-align: center;
@@ -51,14 +47,16 @@
     }
 }
 
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 body, p, div, button, main {
     font-family: $fontBase;
 }
 
 .header {
-    // margin: 0 auto;
-    // width: 100%;
     background-image: $headerBg;
     background-size: cover;
     background-repeat: no-repeat;
@@ -69,33 +67,10 @@ body, p, div, button, main {
         
         .landing-logo {
             @extend .landing-logo;
-
-            // img {
-            //     // display: inline-block;
-            //     height: 90%;
-            // }
-            
-            // p {
-            //     margin: 0 0 0 10px;
-            //     display: flex;
-            //     // text-align: center;
-            //     flex-direction: column;
-            //     font-weight: 600;
-            //     color: $fontColorBase;
-            //     font-size: $fontSizeBase + 10;
-            //     // justify-content: flex-end;
-            //     span {
-            //         // display: block;
-            //         font-family: $fontLogo;
-            //         font-size: $fontSizeBase - 4;
-            //         text-align: center;
-            //     }
-            // }
         }
 
         .header_heading {
             max-width: 500px;
-            // font-size: 60px;
             font-size: $fontSizeBase + 46;
             font-weight: bold;
             color: $fontColorBase;
@@ -139,7 +114,6 @@ body, p, div, button, main {
 }
 
 .section {
-    // margin: 0 0 100px 0;
     .section_text {
         text-align: center;
         font-size: $fontSizeBase + 24;
@@ -163,7 +137,6 @@ body, p, div, button, main {
     .section_card_wrap {
         display: flex;
         flex-direction: column;
-        // align-items: center;
         .section_card {
             align-self: center;
             background-color: $bgCardColor;
@@ -195,8 +168,6 @@ body, p, div, button, main {
                 }
         
                 a {
-                    // margin: 0 auto;
-                    // align-self: center;
                     @include urls ($color: $colorNews);
                 }
             }
@@ -206,7 +177,6 @@ body, p, div, button, main {
     .section_banner {
         z-index: 100;
         margin: 100px auto;
-        // margin: 0 auto -50px auto;
         width: 70%;
         border-radius: $baseRadius;
         display: flex;
@@ -214,20 +184,14 @@ body, p, div, button, main {
         background: linear-gradient(90deg, rgba(100,148,19,1) 0%, rgba(47,93,209,1) 100%);
         position: relative;
         box-sizing: border-box;
-        // padding: 0 150px;
         
         .section_banner_text_wrap {
-            // align-items: center;
             display: flex;
-            // display: inline-block;
             flex-direction: column;
             justify-content: space-around;
             padding: 20px 0;
-            // width: 50%;
-            // position: relative;
 
             .section_banner_heading {
-                // padding: 20px 0;
                 margin: 0;
                 color: $fontColorBase;
                 font-size: $fontSizeBase + 8;
@@ -263,10 +227,7 @@ body, p, div, button, main {
 .footer {
     background-color: $bgCardColor;
     padding: 100px 100px 50px 100px;
-    // padding: 20px 50px 100px 100px;
-
     margin: -150px 0 0 0;
-    // z-index: 1;
 
     .footer-wrap {
         display: flex;
@@ -274,8 +235,6 @@ body, p, div, button, main {
         align-items: center;
 
         .footer_logo {
-            // flex-grow: 1;
-            // width: 33.33%;
             height: 100% - 30;
             @extend .landing-logo;
             p {
@@ -285,16 +244,11 @@ body, p, div, button, main {
         }
 
         .footer_text {
-            // padding: 0 200px;
             width: 350px;
-            // height: 30px;
             color: $colorNews;
         }
 
         .footer-cr {
-            // display: block;
-            // align-self: flex-end;
-            // width: 33.33%;
             color: $colorNews;
         }
     }
