@@ -117,10 +117,16 @@ body, p, div, button, main {
 
 .section {
     .section_text {
+        @if $bgColorMain == null {
+            color: #000000;
+        } @else {
+            color: $fontColorBase
+        }
+
         text-align: center;
         font-size: $fontSizeBase + 24;
         font-weight: 600;
-        color: $fontColorBase;
+        // color: $fontColorBase;
         position: relative;
         z-index: 100;
 

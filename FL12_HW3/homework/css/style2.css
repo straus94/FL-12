@@ -76,10 +76,10 @@ body, p, div, button, main {
         color: #cccccc; }
 
 .section .section_text {
+  color: #ffffff;
   text-align: center;
   font-size: 38px;
   font-weight: 600;
-  color: #ffffff;
   position: relative;
   z-index: 100; }
   .section .section_text::before {
