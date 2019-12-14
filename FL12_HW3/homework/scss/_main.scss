@@ -23,7 +23,10 @@
     }
 }
 
-.landing-logo {
+$fonts: ('base':$fontBase, 'logo':$fontLogo);
+
+
+%landing-logo {
     display: flex;
     align-items: center;
 
@@ -38,8 +41,7 @@
         font-weight: 600;
         color: $fontColorBase;
         font-size: $fontSizeBase + 10;
-        font-family: $fontLogo;
-        // justify-content: flex-end;
+        font-family: map-get($fonts, 'logo');
         span {
             font-family: $fontLogo;
             font-size: $fontSizeBase - 4;
@@ -55,7 +57,7 @@ body {
 }
 
 body, p, div, button, main {
-    font-family: $fontBase;
+    font-family: map-get($fonts, 'base');
 }
 
 .header {
@@ -68,7 +70,7 @@ body, p, div, button, main {
     .header-wrap {
         
         .landing-logo {
-            @extend .landing-logo;
+            @extend %landing-logo;
         }
 
         .header_heading {
@@ -76,7 +78,7 @@ body, p, div, button, main {
             font-size: $fontSizeBase + 46;
             font-weight: bold;
             color: $fontColorBase;
-            font-family: $fontBase;
+            font-family: map-get($fonts, 'base');
             position: relative;
             z-index: 100;
 
@@ -244,7 +246,7 @@ body, p, div, button, main {
 
         .footer_logo {
             height: 100% - 30;
-            @extend .landing-logo;
+            @extend %landing-logo;
             p {
                 color: $colorNews;
             }
