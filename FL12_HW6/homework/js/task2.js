@@ -1,4 +1,3 @@
-// Your code goes here
 let a = +prompt('Please, enter A');
 let b = +prompt('Please, enter B');
 let c = +prompt('Please, enter C');

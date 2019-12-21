@@ -1,4 +1,3 @@
-// Your code goes here
 let a = prompt('Please, enter A');
 let b = prompt('Please, enter B');
 let c = prompt('Please, enter C');
@@ -22,11 +21,11 @@ if (a === null || a === '' || b === null || b === '' || c === null || c === '') 
         if (d < 0) {
             console.log(`no solution (Discriminant < 0)`);
         } else if (d > 0) {
-            x1 = (-b + Math.sqrt(d)) / (a * forSearchingX);
-            x2 = (-b - Math.sqrt(d)) / (a * forSearchingX);
+            x1 = Math.round((-b + Math.sqrt(d)) / (a * forSearchingX));
+            x2 = Math.round((-b - Math.sqrt(d)) / (a * forSearchingX));
             console.log(`x1 = ${x1}, x2 = ${x2}`);
         } else {
-            x = (-b + Math.sqrt(d)) / (a * forSearchingX);
+            x = Math.round((-b + Math.sqrt(d)) / (a * forSearchingX));
             console.log(`x = ${x}`);
         }
     }
