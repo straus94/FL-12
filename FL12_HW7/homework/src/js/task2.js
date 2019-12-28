@@ -21,16 +21,14 @@ while (game) {
                 } 
                 if (i === 1) {
                     currentAttempht = third;
-                } 
-                let strAttemphtLeft = `Attempts left: ${i}`;
-                let strTotalPrice = `Total price: ${winner}$`;
-                let strPossiblePrice = `Possible price on current attempth: ${currentAttempht * level}$`;
+                }
                 numberPocket = +prompt(`Choose a roulette pocket number from 0 to ${range - 1}
-${strAttemphtLeft}
-${strTotalPrice}
-${strPossiblePrice}`);
+Attempts left: ${i}
+Total price: ${winner}$
+Possible price on current attempth: ${currentAttempht * level}$`);
                 if (numberPocket === rand) {
-                    if (confirm(`Congratulation, you won! Your prize is: ${winner += currentAttempht * level}$. Do you want to continue?`)) {
+                    if (confirm(`Congratulation, you won! Your prize is: ${winner += currentAttempht * level}$. 
+Do you want to continue?`)) {
                         range += 4;
                         level++;
                         game = true;
