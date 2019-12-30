@@ -14,11 +14,9 @@ let makeNumber = str => {
 
 let countNumbers = str => {
     let result = {}
-    // console.log(makeNumber(str));
     let currentNumber = makeNumber(str);
     currentNumber += '';
     let arr = currentNumber.split('');
-    // console.log(arr);
     arr.forEach(e => {
         Object.keys(result).includes(e) ? result[e] += 1 : result[e] = 1;
     });

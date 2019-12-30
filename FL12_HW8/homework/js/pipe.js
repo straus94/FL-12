@@ -1,4 +1,3 @@
-
 let pipe = (...args) => {
     return args.reduce(function(num, func) {
         return func(num);   

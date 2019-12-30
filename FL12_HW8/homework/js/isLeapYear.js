@@ -1,4 +1,3 @@
-
 let isLeapYear = (date) => {
     let customDate = new Date(date);
     customDate = customDate.toString();
@@ -16,6 +15,4 @@ let isLeapYear = (date) => {
 }
 
 console.log(isLeapYear('2020-01-01 00:00:00'));
-// isLeapYear(1213131313); 
 console.log(isLeapYear(1213131313135465656654564646542132132131)); 
-// isLeapYear(1213131313135465656654564646542132132131);
