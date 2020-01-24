@@ -1,0 +1,38 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.list {
+    list-style: none;
+    width: 100%;
+}
+
+.list__item--open,
+.list__item--close {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.list__item--open:hover,
+.list__item--close:hover {
+    background-color: #75757526;
+}
+
+
+
+.list__block {
+    flex-grow: 1;
+}
+
+.icon--open {
+    color: #EDBC0B;
+}
+.icon--close {
+    color: #EDBC0B;
+}
+
+.file {
+    color: #cccccc;
+}
