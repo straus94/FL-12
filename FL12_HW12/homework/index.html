@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 12 - Simple TODO List</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div id="root">  
+
+    <div id="main">
+        <h1 class="title">Main</h1>
+        <button class="main-btn">Add new</button>
+        <div class="setField">
+          <p class="mainText">Your set is emply</p>
+            <ul class="set">
+            </ul>
+        </div>
+
+      </div>
+
+
+    <div id="add">
+        <h1 class="title">Add new set</h1>
+       <div class="create_new_todo">
+           <input type="text" class="messageTitle" placeholder="Enter term">
+           <input type="text" class="messageDes" placeholder="Enter definition">
+          <div class="btn-wrapp">
+              <button class="add-btn">Add set</button>
+              <button class="cancelBtn">Cancel</button>
+          </div> 
+       </div>
+   </div>
+
+   <div id="modifity">
+     <h1 class="title">Modify set</h1>
+     <div class="modifity-todo">
+       <input type="text" class="modText">
+       <div class="btn-wrapp">
+         <button class="modifityBtn">Save changes</button>
+         <button class="cancelBtn">Cancel</button>
+        </div>
+     </div>
+   </div>
+</div>
+
+  <script src="./src/app.js"></script>
+</body>
+</html>
